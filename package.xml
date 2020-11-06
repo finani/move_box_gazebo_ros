@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>move_box_gazebo_ros</name>
+  <version>0.1.0</version>
+  <description>Gazebo Move Box simulation</description>
+  <maintainer email="finani@kaist.ac.kr">Inhwan Wee</maintainer>
+  <license>.</license>
+  <author>Inhwan Wee</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>gazebo</build_depend>
+  <build_depend>gazebo_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <run_depend>message_runtime</run_depend> 
+  <run_depend>roscpp</run_depend>
+  <run_depend>gazebo</run_depend>
+  <run_depend>gazebo_msgs</run_depend>
+
+</package>
+
