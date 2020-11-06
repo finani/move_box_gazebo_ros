@@ -1,20 +1,32 @@
 # move_box_gazebo_ros
 
-1. gedit ~/.bashrc
+1. Edit bashrc
+```
+gedit ~/.bashrc
+```
 ```
 export GAZEBO_PLUGIN_PATH=$HOME/catkin_ws/build/move_box_gazebo_ros:$GAZEBO_PLUGIN_PATH
 ```
-2. roslaunch move_box_gazebo_ros move_box_gazebo_ros.launch
+2. Launch test world
+```
+roslaunch move_box_gazebo_ros move_box_gazebo_ros.launch
+```
 
-3. rostopic pub /box_weebee/cmd std_msgs/Float32MultiArray "layout:
+3. rostopic pub
+```
+rostopic pub /box_weebee/cmd std_msgs/Float32MultiArray "layout:
   dim:
   - label: ''
     size: 0
     stride: 0
   data_offset: 0
 data: [0,0,0,0,0,0]"  -r 10
+```
 
-- source ~/.bashrc
+4. Source bashrc
+```
+source ~/.bashrc
+```
 
 - gedit move_box.world
 ```
